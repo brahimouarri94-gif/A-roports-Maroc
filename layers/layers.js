@@ -27,7 +27,7 @@ var lyr_Regions_MAR_1 = new ol.layer.Vector({
                 source:jsonSource_Regions_MAR_1, 
                 style: style_Regions_MAR_1,
                 popuplayertitle: 'Regions_MAR',
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/Regions_MAR_1.png" /> Regions_MAR'
             });
 var format_Aearoports_MAR_2 = new ol.format.GeoJSON();
@@ -66,13 +66,8 @@ lyr_Aearoports_MAR_2.set('fieldAliases', {'Nom_fr': 'Nom_fr', 'Nom_ar': 'Nom_ar'
 lyr_Limites_MAR_0.set('fieldImages', {'OBJECTID': 'TextEdit', });
 lyr_Regions_MAR_1.set('fieldImages', {'OBJECTID': 'TextEdit', 'CODE_REGIO': 'TextEdit', 'Nom_Region': 'TextEdit', 'Population': 'TextEdit', 'Menages': 'TextEdit', 'Etrangers': 'TextEdit', 'Marocains': 'TextEdit', 'Non_ar': 'TextEdit', });
 lyr_Aearoports_MAR_2.set('fieldImages', {'Nom_fr': 'TextEdit', 'Nom_ar': 'TextEdit', 'iata': 'TextEdit', 'Capacite_A': 'TextEdit', 'Capacite_1': 'TextEdit', 'Capacite_2': 'TextEdit', });
-<<<<<<< HEAD
 lyr_Limites_MAR_0.set('fieldLabels', {'OBJECTID': 'hidden field', });
 lyr_Regions_MAR_1.set('fieldLabels', {'OBJECTID': 'hidden field', 'CODE_REGIO': 'hidden field', 'Nom_Region': 'inline label - always visible', 'Population': 'inline label - always visible', 'Menages': 'no label', 'Etrangers': 'hidden field', 'Marocains': 'hidden field', 'Non_ar': 'hidden field', });
-=======
-lyr_Limites_MAR_0.set('fieldLabels', {'OBJECTID': 'no label', });
-lyr_Regions_MAR_1.set('fieldLabels', {'OBJECTID': 'hidden field', 'CODE_REGIO': 'hidden field', 'Nom_Region': 'inline label - always visible', 'Population': 'inline label - always visible', 'Menages': 'no label', 'Etrangers': 'hidden field', 'Marocains': 'inline label - always visible', 'Non_ar': 'hidden field', });
->>>>>>> c65657fadfde5c63e5e84742a094043cbec358fc
 lyr_Aearoports_MAR_2.set('fieldLabels', {'Nom_fr': 'inline label - always visible', 'Nom_ar': 'inline label - always visible', 'iata': 'hidden field', 'Capacite_A': 'hidden field', 'Capacite_1': 'inline label - always visible', 'Capacite_2': 'hidden field', });
 lyr_Aearoports_MAR_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
